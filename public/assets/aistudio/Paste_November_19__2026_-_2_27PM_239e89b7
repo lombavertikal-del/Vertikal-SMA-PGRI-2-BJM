@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VERTIKAL SMAGRIDA - SMA PGRI 2 Banjarmasin</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{--krem:#F7EFE7;--coklat-muda:#D1B18B;--denim-muda:#729BA3;--denim:#2E5A74;--navy:#1B3A4B;--putih:#FFFDF8;--coklat:#8B5E3C;--card:rgba(255,253,248,.94);--teks:#1B3A4B;--box:#fff;--border:#E8DDD0}
+/* ===== MODE GELAP ===== */
+body.dark{--krem:#0F1E2A;--putih:#1B3A4B;--card:rgba(27,58,75,.92);--teks:#F7EFE7;--box:#22365E;--border:#2E5A74}
+body.dark .box,body.dark .kes-box,body.dark .fb-item,body.dark .dg div{color:#F7EFE7}
+body.dark input,body.dark select,body.dark textarea{background:#0F1E2A!important;color:#fff!important;border-color:#729BA3!important}
+body.dark table td{color:#F7EFE7}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Calibri','Cambria',Arial,sans-serif;font-size:18px}
+body{color:var(--teks);background:var(--krem);line-height:1.6;transition:.3s}
+h1,h2,h3,h4{font-family:'Cambria','Times New Roman',serif;font-weight:900;letter-spacing:.3px;color:var(--teks)}
+h1{font-size:32px;text-transform:uppercase;line-height:1.2} h2{font-size:26px;text-transform:uppercase;border-left:8px solid var(--coklat-muda);padding-left:12px} h3{font-size:22px}
+p,li,td,th,small,button,input,select,textarea,label{font-size:18px!important} small{font-size:16px!important}
+/* ICON 60px */
+.icon{width:60px;height:60px;font-size:60px!important;line-height:60px;text-align:center;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:50%;padding:2px;border:3px solid var(--coklat-muda)}
+.logo-big{width:110px;height:110px;object-fit:contain;background:#fff;border-radius:50%;padding:4px;border:4px solid var(--coklat-muda);margin:12px auto 0;display:block}
+.bg{position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,#1B3A4B,#2E5A74,#729BA3,#D1B18B,#F7EFE7);background-size:400% 400%;animation:g 14s ease infinite}
+body.dark .bg{background:linear-gradient(135deg,#0F1E2A,#1B3A4B,#2E5A74,#5D3A1A);background-size:400% 400%}
+@keyframes g{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.c{max-width:1180px;margin:0 auto;padding:16px}
+/* COVER */
+#cover{position:fixed;inset:0;z-index:100;background:#1B3A4B;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
+#coverInner{width:100%;max-width:980px;background:#FFFDF8;border-radius:28px;overflow:hidden;text-align:center;border:6px solid var(--coklat-muda);color:#1B3A4B}
+#coverImg{width:100%;height:340px;object-fit:cover;display:block;background:#729BA3}
+.coverTop{background:var(--navy);color:#fff;padding:12px;font-weight:800;letter-spacing:2px}.coverTop span{color:#D1B18B}
+#coverInner h1{padding:10px 18px 4px;color:#1B3A4B}#coverInner p{padding:0 18px 12px;color:#475569;font-weight:600}
+.coverBtn{background:var(--navy);color:#fff;border:none;padding:15px 30px;border-radius:999px;font-weight:900;cursor:pointer;margin:6px}
+.coverBtn2{background:#8B5E3C}
+.uploadLabel{display:inline-block;background:#EAF6FF;color:#1B3A4B;padding:10px 16px;border-radius:999px;font-weight:800;cursor:pointer;margin:6px;border:1.5px dashed var(--denim)}
+/* SLIDER */
+.slider{overflow:hidden;border-radius:22px;margin-top:16px;position:relative;height:260px;background:var(--navy);border:4px solid var(--coklat-muda)}
+.slides{display:flex;width:300%;height:100%;animation:slide 12s infinite}.slides img{width:33.333%;height:100%;object-fit:cover}
+@keyframes slide{0%,30%{transform:translateX(0)}35%,65%{transform:translateX(-33.333%)}70%,95%{transform:translateX(-66.666%)}100%{transform:translateX(0)}}
+.sliderTag{position:absolute;bottom:12px;left:12px;background:rgba(27,58,75,.9);color:#fff;padding:8px 14px;border-radius:999px;font-weight:800}
+.sliderTag2{position:absolute;top:12px;right:12px;background:var(--coklat-muda);color:#1B3A4B;padding:6px 12px;border-radius:999px;font-weight:800}
+header{background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.1);border-left:8px solid var(--coklat-muda)}
+.header-left{display:flex;gap:14px;align-items:center}
+.badge{background:var(--navy);color:#fff;padding:8px 14px;border-radius:999px;font-weight:800}.badge2{background:var(--coklat-muda);color:#1B3A4B;padding:8px 14px;border-radius:999px;font-weight:800}
+.toggleBtn{background:#F7EFE7;color:#1B3A4B;border:2px solid #D1B18B;padding:10px 16px;border-radius:999px;font-weight:900;cursor:pointer}
+body.dark .toggleBtn{background:#1B3A4B;color:#F7EFE7}
+.card{background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.07);border-top:6px solid var(--denim)}
+.sec{margin-top:16px;background:var(--card);backdrop-filter:blur(14px);border-radius:24px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.box{background:var(--box);border-radius:18px;padding:16px;border:1px solid var(--border)}
+.search{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.search input,.search select,.search textarea{padding:14px;border-radius:14px;border:1.5px solid #729BA3;width:100%;background:#FFFDF8}
+.search input,.search select{flex:1;min-width:170px}
+button{background:var(--navy);color:#fff;border:none;padding:14px 20px;border-radius:14px;font-weight:800;cursor:pointer}
+button.sec2{background:var(--denim)} button.warn{background:#B45309} button.coklat{background:#8B5E3C}
+table{width:100%;border-collapse:collapse;margin-top:14px} th{background:var(--navy);color:#fff;padding:12px;text-align:left} th:nth-child(3),th:nth-child(4){background:var(--coklat-muda);color:#1B3A4B} td{padding:12px;border-bottom:1px solid var(--border);vertical-align:top}
+.pill{padding:5px 10px;border-radius:999px;font-weight:800;white-space:nowrap}.good{background:#DCFCE7;color:#166534}.mid{background:#FEF9C3;color:#854D0E}.low{background:#FEE2E2;color:#991B1B}
+.det{background:#F0F9FF;border:2px solid #729BA3;border-radius:18px;padding:16px;margin-top:14px;display:none;color:#1B3A4B}
+body.dark .det{background:#22365E;color:#fff}
+.dg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.dg div{background:var(--box);border-radius:14px;padding:12px;border:1px solid var(--border)}
+.kes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.kes-box{background:var(--box);border-radius:18px;padding:18px;border-top:7px solid var(--denim)}
+.kes-box:nth-child(1){border-top-color:#22C55E}.kes-box:nth-child(2){border-top-color:#729BA3}.kes-box:nth-child(3){border-top-color:#D1B18B}.kes-box:nth-child(4){border-top-color:#2E5A74}.kes-box:nth-child(5){border-top-color:#F59E0B}.kes-box:nth-child(6){border-top-color:#8B5CF6}
+.kes-big{background:linear-gradient(135deg,#1B3A4B,#2E5A74,#8B5E3C);color:#fff;border-radius:20px;padding:22px;margin-top:16px}.kes-big h3{color:#fff}
+.feedback{border:2px dashed #8B5E3C;background:#FFF8E7;border-radius:18px;padding:16px;margin-top:14px;color:#1B3A4B}
+body.dark .feedback{background:#2E2A1A;color:#fff}
+.fb-item{background:var(--box);border-radius:14px;padding:12px;margin-top:10px;border-left:5px solid #D1B18B}
+.profil{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avatar{width:92px;height:92px;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.2);background:linear-gradient(135deg,#2E5A74,#D1B18B);color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px!important;font-weight:900;font-family:'Cambria',serif;overflow:hidden;flex-shrink:0}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.refleksi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.refleksi-grid label{font-weight:700}
+@media(max-width:820px){.g4,.charts,.dg,.kes-grid,.refleksi-grid{grid-template-columns:1fr 1fr}#coverImg{height:220px}}
+@media(max-width:520px){.g4,.charts,.dg,.kes-grid,.refleksi-grid{grid-template-columns:1fr}h1{font-size:26px}#coverInner h1{font-size:24px}.slider{height:180px}}
+</style></head>
+<body><div class="bg"></div>
+
+<div id="cover"><div id="coverInner">
+<div class="coverTop">VERTIKAL SMAGRIDA <span>★</span> SMA PGRI 2 BANJARMASIN</div>
+<img id="coverImg" src="foto-sekolah.jpg" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80'" alt="Cover SMA PGRI 2">
+<img class="logo-big" src="logo-sma.png" onerror="this.src='https://via.placeholder.com/110x110?text=LOGO'" alt="Logo SMA PGRI 2">
+<h1>SELAMAT DATANG<br>SURVEI DASHBOARD KEBIASAAN SISWA<br><b>7 KEBIASAAN ANAK INDONESIA HEBAT</b><br>SMA PGRI 2 BANJARMASIN</h1>
+<p>VERTIKAL SMAGRIDA • Bangun Pagi • Ibadah • Olahraga • Makan Sehat & Bergizi • Gemar Belajar • Bermasyarakat • Tidur Cepat</p>
+<div style="padding:0 18px 18px">
+<button class="coverBtn" onclick="document.getElementById('cover').style.display='none'">▶ MASUK DASHBOARD</button>
+<button class="coverBtn coverBtn2" onclick="document.getElementById('cover').style.display='none'">📊 LIHAT SURVEI</button><br>
+<label class="uploadLabel">📸 Ganti Foto Cover <input type="file" accept="image/*" hidden onchange="gantiCover(this)"></label>
+</div></div></div>
+
+<div class="c">
+<header><div class="header-left"><img class="logo" src="logo-sma.png" onerror="this.src='https://via.placeholder.com/60x60?text=LOGO'" alt="Logo"><div><h1>VERTIKAL SMAGRIDA</h1><p>SMA PGRI 2 BANJARMASIN • 7 Kebiasaan Anak Indonesia Hebat</p></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><div class="badge">765 Pengisian</div><div class="badge2">308 Responden</div><button class="toggleBtn" id="toggleBtn" onclick="toggleMode()">🌙 Mode Gelap</button></div></header>
+
+<div class="slider"><div class="slides" id="slidesSekolah">
+<img src="foto-sekolah.jpg" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80'" alt="Sekolah 1">
+<img src="foto-sekolah.jpg" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80'" alt="Sekolah 2">
+<img src="foto-sekolah.jpg" onerror="this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=80'" alt="Sekolah 3">
+</div><div class="sliderTag">🏫 SMA PGRI 2 BANJARMASIN</div><div class="sliderTag2">VINTAGE DENIM • BERGERAK OTOMATIS</div></div>
+
+<div class="sec"><h2><span class="icon">📊</span> SURVEI - STATISTIK SURVEI SISWA</h2><div class="g4">
+<div class="card"><div class="icon">📝</div><small>Total Pengisian Survei</small><h3>765</h3><p>4 hari survei • 21 pernyataan</p></div>
+<div class="card"><div class="icon">⭐</div><small>Skor Rata-rata Survei</small><h3>2.98 / 4.00</h3><p>Kategori: BAIK</p></div>
+<div class="card"><div class="icon">🤝</div><small>Dimensi Tertinggi</small><h3>Sosial 3.25</h3><p>Menghargai perbedaan 3.44</p></div>
+<div class="card"><div class="icon">⚠️</div><small>Perlu Dibina</small><h3>Diskusi 2.75</h3><p>Pertanyaan berbobot 2.45</p></div>
+</div></div>
+
+<!-- GRAFIK BATANG SEMUA -->
+<div class="sec"><h2><span class="icon">📈</span> GRAFIK BATANG HASIL SURVEI</h2><p>Semua grafik batang, tidak ada grafik lain.</p>
+<div class="charts"><div class="box"><h3>📊 Per Dimensi (Batang)</h3><canvas id="c1"></canvas></div><div class="box"><h3>📊 Per Kelas (Batang)</h3><canvas id="c2"></canvas></div></div>
+<div class="box" style="margin-top:16px"><h3>📊 Per Item (Batang)</h3><canvas id="c3" height="120"></canvas></div></div>
+
+<div class="sec"><h2><span class="icon">📋</span> ANALISIS - RATA-RATA, MODUS, PALING SEDIKIT</h2>
+<div style="overflow:auto"><table><thead><tr><th>Pernyataan</th><th>Dimensi</th><th>Rata-rata Mentah</th><th>Rata-rata Dibalik</th><th>Modus</th><th>Paling Sedikit</th><th>Status</th></tr></thead><tbody id="tabelItem"></tbody></table></div></div>
+
+<div class="sec"><h2><span class="icon">🔍</span> DATA SISWA - KLIK NAMA UNTUK LIHAT PROFIL</h2>
+<div class="search"><input id="q" placeholder="Ketik kode / kelas... S-001, X-1..." oninput="cari()"><select id="fk" onchange="cari()"><option value="">Semua Kelas</option></select><button onclick="cari()">🔍 Cari</button></div>
+<p id="hasil"></p>
+<div class="det" id="det"><div class="profil"><div class="avatar" id="avatarBox">S</div><div><h3 id="dn"></h3><p id="di"></p><label class="uploadLabel">📸 Ganti Foto Profil <input type="file" accept="image/*" hidden onchange="gantiAvatar(this)"></label><br><button onclick="hapusAvatar()" style="padding:8px 12px;margin-top:6px;background:#EF4444">Hapus Foto (Balik ke Inisial)</button></div></div><div class="dg" id="dg"></div><p id="ds" style="margin-top:10px;font-weight:700"></p>
+<div class="feedback"><h4>💬 FORM FEEDBACK / SARAN - UNTUK SISWA YANG NILAINYA KURANG BAIK</h4><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px"><select id="fbKategori"><option>📚 Disiplin Pagi</option><option>🕌 Ibadah</option><option>🏃 Olahraga</option><option>🍽️ Jajan / MBG</option><option>💬 Diskusi</option><option>🤝 Sosial</option><option>😴 Tidur</option></select><select id="fbOleh"><option>Guru BK</option><option>Wali Kelas</option><option>Guru Piket</option><option>Teman / OSIS</option></select></div><textarea id="fbIsi" rows="3" placeholder="Tulis saran..."></textarea><div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="sec2" onclick="simpanFeedback()">💾 Simpan Saran</button><button class="coklat" onclick="isiSaranOtomatis()">✨ Isi Saran Otomatis</button></div></div><div id="listFeedback"></div></div>
+<div style="overflow:auto"><table><thead><tr><th>Foto</th><th>Kode</th><th>Kelas</th><th>Isi</th><th>Skor</th><th>Kategori</th><th>Aksi</th></tr></thead><tbody id="tb"></tbody></table></div></div>
+
+<!-- FORM REFLEKSI HARIAN -->
+<div class="sec"><h2><span class="icon">📝</span> FORM REFLEKSI HARIAN - 7 KEBIASAAN</h2><p>Isi tiap hari, biar keliatan progresnya. Tersimpan di HP ini.</p>
+<div class="search"><input id="refNama" placeholder="Kode siswa, contoh S-001"><input type="date" id="refTanggal"></div>
+<div class="refleksi-grid">
+<label>Bangun Pagi (1-4) <select id="r1"><option>4 - Sebelum 05.30</option><option>3 - 05.30-06.00</option><option>2 - 06.00-06.30</option><option>1 - Telat / >06.30</option></select></label>
+<label>Ibadah (1-4) <select id="r2"><option>4 - Tepat waktu + ajak teman</option><option>3 - Tepat waktu</option><option>2 - Telat dikit</option><option>1 - Kelewat / main HP</option></select></label>
+<label>Olahraga (1-4) <select id="r3"><option>4 - Olahraga 30 menit</option><option>3 - Jalan kaki / senam 15 menit</option><option>2 - Gerak dikit</option><option>1 - Tidak gerak sama sekali</option></select></label>
+<label>Makan Sehat / MBG (1-4) <select id="r4"><option>4 - MBG habis + air putih</option><option>3 - MBG habis</option><option>2 - MBG sisa dikit</option><option>1 - Jajan manis terus</option></select></label>
+<label>Gemar Belajar / Diskusi (1-4) <select id="r5"><option>4 - Tanya berbobot + cari sendiri</option><option>3 - Tanya 1x</option><option>2 - Nyimak aja</option><option>1 - Nggak fokus</option></select></label>
+<label>Bermasyarakat / Sosial (1-4) <select id="r6"><option>4 - Sapa + bantu teman + organisasi</option><option>3 - Sapa + ramah</option><option>2 - Diam aja</option><option>1 - Berantem / cuek</option></select></label>
+<label>Tidur Cepat (1-4) <select id="r7"><option>4 - Tidur sebelum 21.00, HP disimpan</option><option>3 - Tidur 21.00-22.00</option><option>2 - Tidur 22.00-23.00 main HP</option><option>1 - Tidur >23.00 main HP</option></select></label>
+<label>Catatan Hari Ini <input id="rCatatan" placeholder="Contoh: Hari ini berhasil tanya di kelas..."></label>
+</div>
+<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button onclick="simpanRefleksi()">💾 Simpan Refleksi Harian</button><button class="warn" onclick="hapusRefleksi()">🗑️ Hapus Refleksi</button></div>
+<div id="listRefleksi" style="margin-top:14px"></div></div>
+
+<div class="sec"><h2><span class="icon">📌</span> KESIMPULAN - HASIL DATA 765 PENGISIAN</h2>
+<div class="kes-big"><h3>Skor Rata-rata: 2.98 / 4.00 - BAIK</h3><p>Kuat: Sosial 3.25, Ibadah 3.16, Disiplin 3.04. Perlu dibina: Diskusi 2.75, Olahraga 2.79, Jajan 2.83.</p></div>
+<div class="kes-grid">
+<div class="kes-box"><div class="icon">✅</div><h3>1. SUDAH BAGUS</h3><p>Menghargai perbedaan <b>3.44</b> (Modus 4), Menyapa <b>3.38</b>, Berdoa <b>3.29</b>, Tepat waktu <b>3.21</b>.</p></div>
+<div class="kes-box"><div class="icon">⭐</div><h3>2. NEGATIF RENDAH = BAGUS</h3><p>Mimpi buruk <b>1.84</b> (dibalik 3.16), Menunda ibadah <b>1.91</b> (dibalik 3.09), Tertidur HP <b>2.05</b> (dibalik 2.95).</p></div>
+<div class="kes-box"><div class="icon">💬</div><h3>3. PRIORITAS: DISKUSI</h3><p>Diskusi <b>2.75</b>, pertanyaan berbobot <b>2.45</b> (Modus 2). Siswa masih takut bertanya.</p></div>
+<div class="kes-box"><div class="icon">🏃</div><h3>4. PRIORITAS: OLAHRAGA</h3><p>Olahraga <b>2.79</b>, olahraga rutin <b>2.47</b> (Modus 2). Gerak aktif masih kurang.</p></div>
+<div class="kes-box"><div class="icon">🍽️</div><h3>5. PRIORITAS: JAJAN</h3><p>Jajan <b>2.83</b>, MBG <b>2.88</b>. Perlu edukasi kantin sehat.</p></div>
+<div class="kes-box"><div class="icon">😴</div><h3>6. PRIORITAS: TIDUR</h3><p>Tidur cukup <b>2.84</b>. Kampanye "HP tidur duluan" jam 21.00.</p></div>
+</div>
+<div class="kes-big" style="margin-top:16px"><h3>✅ INSIGHT & REKOMENDASI TINDAKAN</h3><p style="margin-top:8px;line-height:1.8">1) Diskusi: Wajib 1 pertanyaan berbobot per kelas per hari.<br>2) Olahraga: Senam / jalan kaki 15 menit sebelum jam pertama, 3x seminggu.<br>3) Jajan: Edukasi air putih, kurangi minuman manis.<br>4) Tidur: Orang tua ikut cek HP jam 21.00.</p></div>
+</div>
+
+<div class="sec"><h2><span class="icon">💬</span> SEMUA FEEDBACK & REFLEKSI TERSIMPAN</h2><div id="allFeedback"></div><button class="warn" onclick="hapusSemuaFb()" style="margin-top:12px">🗑️ Hapus Semua Feedback</button></div>
+</div>
+
+<script>
+// ===== MODE GELAP / TERANG =====
+function toggleMode(){const b=document.body; b.classList.toggle('dark'); const dark=b.classList.contains('dark'); document.getElementById('toggleBtn').textContent=dark?'☀️ Mode Terang':'🌙 Mode Gelap'; localStorage.setItem('vertikal_mode',dark?'dark':'light');}
+if(localStorage.getItem('vertikal_mode')==='dark'){document.body.classList.add('dark'); document.getElementById('toggleBtn').textContent='☀️ Mode Terang';}
+const itemStats=[
+{col:"Aku bangun pagi sebelum pukul 06.00",dim:"Disiplin Pagi",raw:2.92,rev:2.92,mode:3,least:1,neg:false},
+{col:"Aku selalu datang tepat waktu ke sekolah.",dim:"Disiplin Pagi",raw:3.21,rev:3.21,mode:4,least:1,neg:false},
+{col:"Aku merapikan tempat tidurku sendiri",dim:"Disiplin Pagi",raw:2.98,rev:2.98,mode:3,least:1,neg:false},
+{col:"Aku menunda waktu ibadah karena scrolling HP",dim:"Ibadah",raw:1.91,rev:3.09,mode:2,least:4,neg:true},
+{col:"Aku menyempatkan diri berdoa",dim:"Ibadah",raw:3.29,rev:3.29,mode:3,least:1,neg:false},
+{col:"Aku mengajak teman ingatkan ibadah",dim:"Ibadah",raw:3.10,rev:3.10,mode:3,least:1,neg:false},
+{col:"Di luar jam olahraga, aku olahraga rutin.",dim:"Olahraga",raw:2.47,rev:2.47,mode:2,least:1,neg:false},
+{col:"Aku jalan kaki untuk jarak dekat",dim:"Olahraga",raw:2.67,rev:2.67,mode:2,least:1,neg:false},
+{col:"Aku pemanasan sebelum olahraga",dim:"Olahraga",raw:3.22,rev:3.22,mode:4,least:1,neg:false},
+{col:"Aku memilih air putih dibanding minuman manis",dim:"Jajan",raw:3.09,rev:3.09,mode:3,least:1,neg:false},
+{col:"Menu jajananku didominasi makanan kurang sehat",dim:"Jajan",raw:2.49,rev:2.51,mode:3,least:4,neg:true},
+{col:"Aku menghabiskan MBG tanpa sisa",dim:"Jajan",raw:2.88,rev:2.88,mode:3,least:1,neg:false},
+{col:"Rasa penasaranku memaksaku cari tahu di internet/AI",dim:"Diskusi",raw:2.81,rev:2.81,mode:3,least:1,neg:false},
+{col:"Aku mengajukan pertanyaan berbobot",dim:"Diskusi",raw:2.45,rev:2.45,mode:2,least:1,neg:false},
+{col:"Aku mencari jawaban sendiri sebelum bertanya",dim:"Diskusi",raw:3.00,rev:3.00,mode:3,least:1,neg:false},
+{col:"Aku menyapa dan ramah",dim:"Sosial",raw:3.38,rev:3.38,mode:4,least:1,neg:false},
+{col:"Aku berpartisipasi aktif organisasi/ekskul",dim:"Sosial",raw:2.93,rev:2.93,mode:3,least:1,neg:false},
+{col:"Aku menghargai perbedaan pendapat",dim:"Sosial",raw:3.44,rev:3.44,mode:4,least:1,neg:false},
+{col:"Aku tidur cukup 7-8 jam",dim:"Tidur",raw:2.84,rev:2.84,mode:3,least:1,neg:false},
+{col:"Aku tertidur dengan HP di tangan",dim:"Tidur",raw:2.05,rev:2.95,mode:2,least:4,neg:true},
+{col:"Aku mimpi buruk setelah main HP larut",dim:"Tidur",raw:1.84,rev:3.16,mode:2,least:4,neg:true}
+];
+const RAW=[["S-001","X-1",4,3.55,[3.58,3.75,3.92,3.33,4,4,2.25]],["S-002","X-1",4,2.54,[2.22,3.11,2.56,2.33,2.22,2.78,2.56]],["S-003","X-2",4,3.31,[3.33,3.25,2.42,3.42,3.58,4,3.17]],["S-004","X-3",4,2.83,[2.92,2.92,2.67,3,2.67,2.67,3]],["S-005","XI-1",4,3.42,[3.92,3.08,3,3.33,3.58,3.92,3.08]],["S-006","XI-2",4,2.31,[1.67,2.58,2.33,2.42,2,2.33,2.83]],["S-007","XI-3",4,3.62,[3.75,3.42,3.25,3.75,3.83,4,3.33]],["S-008","XII-1",4,3.88,[4,4,3.75,4,3.42,4,4]],["S-009","XII-2",4,2.33,[2.08,2.58,2.08,2.17,2.17,2.75,2.5]],["S-010","XII-3",4,2.71,[2.67,3.11,1.78,2.67,2.78,3,3]],["S-011","X-2",2,1.55,[1,1,1.83,1.5,2.33,1.33,1.83]],["S-012","XII-1",3,3.97,[4,4,3.78,4,4,4,4]]];
+const DIM=["Disiplin Pagi","Ibadah","Olahraga","Jajan","Diskusi","Sosial","Tidur"];
+const siswaData=RAW.map(r=>{let d={};DIM.forEach((k,i)=>d[k]=r[4][i]);return{kode:r[0],kelas:r[1],jumlah:r[2],skor:r[3],dimensi:d}});
+function kat(s){return s>=3.3?'Sangat Baik':s>=2.7?'Baik':s>=2.3?'Cukup':'Perlu Dibina'}
+function wk(s){return s>=3.3?'good':s>=2.7?'mid':'low'}
+function fmt(v){return v==null?'-':v.toFixed(2)}
+document.getElementById('tabelItem').innerHTML=itemStats.map(r=>`<tr><td>${r.col}</td><td>${r.dim}</td><td><b>${r.raw.toFixed(2)}</b></td><td><b>${r.rev.toFixed(2)}</b></td><td><b>${r.mode}</b></td><td><b>${r.least}</b></td><td><span class="pill ${wk(r.rev)}">${r.neg?'Negatif *':r.rev>=3?'Baik':r.rev>=2.7?'Cukup':'Perlu Perhatian'}</span></td></tr>`).join('');
+const kelasList=[...new Set(siswaData.map(s=>s.kelas))].sort();
+document.getElementById('fk').innerHTML='<option value="">Semua Kelas</option>'+kelasList.map(k=>`<option>${k}</option>`).join('');
+const dimG={}; itemStats.forEach(it=>{if(!dimG[it.dim])dimG[it.dim]=[];dimG[it.dim].push(it.rev)}); const dimM=Object.entries(dimG).map(([k,v])=>[k,v.reduce((a,b)=>a+b,0)/v.length]);
+// ===== SEMUA GRAFIK BATANG =====
+Chart.defaults.font.size=18; Chart.defaults.color='#1B3A4B';
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:dimM.map(x=>x[0]),[STRIPPED]
+new Chart(document.getElementById('c2'),{type:'bar',data:{labels:['X-1','X-2','X-3','XI-1','XI-2','XI-3','XII-1','XII-2','XII-3'],datasets:[{label:'Rata-rata Per Kelas',data:[3.05,2.85,2.95,3.10,2.90,3.15,3.30,2.80,2.95],[STRIPPED]
+new Chart(document.getElementById('c3'),{type:'bar',data:{labels:itemStats.map(r=>r.col.substring(0,[STRIPPED] Dibalik',data:itemStats.map(r=>r.rev),[STRIPPED]
+function gantiCover(inp){if(!inp.files[0])return; const url=URL.createObjectURL(inp.files[0]); document.getElementById('coverImg').src=url;}
+let currentKode=''; let avatarData={}; try{avatarData=JSON.parse(localStorage.getItem('avatar_data')||'{}')}catch(e){avatarData={}}
+function getAvatarHTML(kode){if(avatarData[kode]) return `<img src="${avatarData[kode]}">`; return kode.replace('S-','');}
+function setAvatarBox(kode){document.getElementById('avatarBox').innerHTML=getAvatarHTML(kode);}
+function gantiAvatar(inp){if(!inp.files[0]||!currentKode)return; const r=new FileReader(); r.onload=e=>{avatarData[currentKode]=e.target.result; localStorage.setItem('avatar_data',JSON.stringify(avatarData)); setAvatarBox(currentKode); cari();}; r.readAsDataURL(inp.files[0]);}
+function hapusAvatar(){if(!currentKode)return; delete avatarData[currentKode]; localStorage.setItem('avatar_data',JSON.stringify(avatarData)); setAvatarBox(currentKode); cari();}
+function cari(){const q=document.getElementById('q').value.toLowerCase().trim(); const k=document.getElementById('fk').value; const f=siswaData.filter(s=>(s.kode.toLowerCase().includes(q)||s.kelas.toLowerCase().includes(q))&&(k===''||s.kelas===k));
+document.getElementById('tb').innerHTML=f.map(s=>`<tr><td><div class="avatar" style="width:60px;height:60px;font-size:20px!important">${getAvatarHTML(s.kode)}</div></td><td><b>${s.kode}</b></td><td>${s.kelas}</td><td>${s.jumlah}x</td><td><b>${fmt(s.skor)}</b></td><td><span class="pill ${wk(s.skor)}">${kat(s.skor)}</span></td><td><button onclick="lihat('${s.kode}')">Lihat</button></td></tr>`).join('')||'<tr><td colspan=7>Tidak ditemukan</td></tr>';
+document.getElementById('hasil').textContent='Menampilkan '+f.length+' dari '+siswaData.length+' contoh anonim.';}
+function lihat(kode){const s=siswaData.find(x=>x.kode===kode); if(!s) return; currentKode=kode;
+document.getElementById('det').style.display='block'; setAvatarBox(kode);
+document.getElementById('dn').textContent=kode+' • '+kat(s.skor);
+document.getElementById('di').textContent=s.kelas+' • '+s.jumlah+'x isi • Skor '+fmt(s.skor)+' • '+kat(s.skor);
+document.getElementById('dg').innerHTML=Object.entries(s.dimensi).map(([kk,v])=>`<div><small>${kk}</small><br><b>${fmt(v)}</b> <span class="pill ${wk(v)}">${kat(v)}</span></div>`).join('');
+const arr=Object.entries(s.dimensi).sort((a,b)=>a[1]-b[1]); const t=arr[0];
+document.getElementById('ds').innerHTML='Fokus perbaiki: '+t[0]+' ('+t[1].toFixed(2)+') — '+(s.skor<2.7?'⚠️ Nilai masih kurang, isi form feedback di bawah.':'✅ Sudah baik, pertahankan.');
+tampilFeedbackKode(); document.getElementById('det').scrollIntoView({behavior:'smooth'});}
+function getFb(){try{return JSON.parse(localStorage.getItem('vertikal_fb')||'[]')}catch(e){return[]}}
+function setFb(a){localStorage.setItem('vertikal_fb',JSON.stringify(a))}
+function simpanFeedback(){const isi=document.getElementById('fbIsi').value.trim(); if(!isi){alert('Isi dulu sarannya!');return} const fb={kode:currentKode,kategori:document.getElementById('fbKategori').value,oleh:document.getElementById('fbOleh').value,isi,tgl:new Date().toLocaleString('id-ID')}; const all=getFb(); all.unshift(fb); setFb(all); document.getElementById('fbIsi').value=''; alert('Saran tersimpan untuk '+currentKode); tampilFeedbackKode(); tampilSemuaFb();}
+function isiSaranOtomatis(){const s=siswaData.find(x=>x.kode===currentKode); if(!s) return; const arr=Object.entries(s.dimensi).sort((a,b)=>a[1]-b[1]); const t=arr[0]; const katMap={'Disiplin Pagi':'Coba bangun 15 menit lebih awal & rapikan tempat tidur sebelum HP.','Ibadah':'Ingatkan teman untuk ibadah bareng, kurangi scroll HP pas waktu ibadah.','Olahraga':'Jalan kaki / senam 15 menit, 3x seminggu. Mulai dari yang ringan.','Jajan':'Bawa air putih, kurangi minuman manis, habiskan MBG.','Diskusi':'Coba ajukan 1 pertanyaan berbobot tiap pelajaran, jangan takut salah.','Sosial':'Sapa 3 teman baru tiap hari & ikut 1 ekskul.','Tidur':'HP tidur duluan jam 21.00, tidur 7-8 jam.'}; document.getElementById('fbIsi').value='Fokus: '+t[0]+' ('+t[1].toFixed(2)+'). Saran: '+(katMap[t[0]]||'Tetap semangat!');}
+function tampilFeedbackKode(){const all=getFb().filter(x=>x.kode===currentKode); document.getElementById('listFeedback').innerHTML=all.length?'<h4 style="margin-top:14px">📝 Saran untuk '+currentKode+' ('+all.length+')</h4>'+all.map(f=>`<div class="fb-item"><b>${f.kategori}</b> • ${f.oleh} • <small>${f.tgl}</small><p>${f.isi}</p></div>`).join(''):'<p style="margin-top:10px;color:#64748B">Belum ada saran.</p>';}
+function tampilSemuaFb(){const all=getFb(); document.getElementById('allFeedback').innerHTML=all.length?all.map((f,i)=>`<div class="fb-item"><b>${f.kode}</b> • ${f.kategori} • ${f.oleh} • <small>${f.tgl}</small><p>${f.isi}</p><button onclick="hapusFb(${i})" style="padding:6px 10px;background:#EF4444">Hapus</button></div>`).join(''):'<p>Belum ada feedback.</p>';}
+function hapusFb(i){const all=getFb(); all.splice(i,1); setFb(all); tampilSemuaFb(); tampilFeedbackKode();}
+function hapusSemuaFb(){if(confirm('Hapus semua feedback?')){localStorage.removeItem('vertikal_fb'); tampilSemuaFb(); tampilFeedbackKode();}}
+// ===== REFLEKSI HARIAN =====
+document.getElementById('refTanggal').valueAsDate=new Date();
+function simpanRefleksi(){const nama=document.getElementById('refNama').value.trim()||'Anonim'; const tgl=document.getElementById('refTanggal').value||new Date().toISOString().slice(0,10); const vals=[1,2,3,4,5,6,7].map(i=>parseInt(document.getElementById('r'+i).value.charAt(0))); const rata=(vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(2); const cat=document.getElementById('rCatatan').value; const all=JSON.parse(localStorage.getItem('vertikal_refleksi')||'[]'); all.unshift({nama,tgl,vals,rata,cat}); localStorage.setItem('vertikal_refleksi',JSON.stringify(all)); tampilRefleksi(); alert('Refleksi tersimpan! Rata-rata hari ini: '+rata);}
+function tampilRefleksi(){const all=JSON.parse(localStorage.getItem('vertikal_refleksi')||'[]'); document.getElementById('listRefleksi').innerHTML=all.length?all.map(f=>`<div class="fb-item"><b>${f.nama}</b> • ${f.tgl} • Rata-rata: <b>${f.rata} / 4</b><br><small>Bangun ${f.vals[0]} • Ibadah ${f.vals[1]} • Olahraga ${f.vals[2]} • Makan ${f.vals[3]} • Belajar ${f.vals[4]} • Sosial ${f.vals[5]} • Tidur ${f.vals[6]}</small><p>${f.cat||'-'}</p></div>`).join(''):'<p>Belum ada refleksi.</p>';}
+function hapusRefleksi(){if(confirm('Hapus semua refleksi?')){localStorage.removeItem('vertikal_refleksi'); tampilRefleksi();}}
+cari(); tampilSemuaFb(); tampilRefleksi();
+</script></body></html>

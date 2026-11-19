@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VERTIKAL SMA PGRI 2 BANJARMASIN - 7 Kebiasaan Anak Indonesia Hebat</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{--krem:#F7EFE7;--coklat-muda:#D1B18B;--denim-muda:#729BA3;--denim:#2E5A74;--navy:#1B3A4B;--putih:#FFFDF8;--coklat:#8B5E3C;--card:rgba(255,253,248,.96);--teks:#1B3A4B;--box:#fff;--border:#E8DDD0}
+body.dark{--krem:#0F1E2A;--putih:#1B3A4B;--card:rgba(27,58,75,.95);--teks:#F7EFE7;--box:#22365E;--border:#2E5A74}
+body.dark .box,body.dark .kes-box,body.dark .fb-item,body.dark .dg div,body.dark .k7-box{color:#F7EFE7}
+body.dark input,body.dark select,body.dark textarea{background:#0F1E2A!important;color:#fff!important;border-color:#729BA3!important}
+body.dark table td{color:#F7EFE7}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Calibri','Cambria',Arial,sans-serif;font-size:18px;scroll-behavior:smooth}
+body{color:var(--teks);background:var(--krem);line-height:1.6;transition:.3s}
+h1,h2,h3,h4{font-family:'Cambria','Times New Roman',serif;font-weight:900;letter-spacing:.3px;color:var(--teks)}
+h1{font-size:32px;text-transform:uppercase;line-height:1.25} h2{font-size:26px;text-transform:uppercase;border-left:8px solid var(--coklat-muda);padding-left:12px} h3{font-size:22px}
+p,li,td,th,small,button,input,select,textarea,label{font-size:18px!important} small{font-size:16px!important}
+.icon{width:60px;height:60px;font-size:60px!important;line-height:60px;text-align:center;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:50%;padding:2px;border:3px solid var(--coklat-muda);flex-shrink:0}
+.logo-big{width:110px;height:110px;object-fit:contain;background:#fff;border-radius:50%;padding:4px;border:4px solid var(--coklat-muda);margin:12px auto 0;display:block}
+.logo-footer{width:80px;height:80px;object-fit:contain;background:#fff;border-radius:50%;padding:3px;border:3px solid var(--coklat-muda)}
+.bg{position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,#1B3A4B,#2E5A74,#729BA3,#D1B18B,#F7EFE7);background-size:400% 400%;animation:g 14s ease infinite}
+body.dark .bg{background:linear-gradient(135deg,#0F1E2A,#1B3A4B,#2E5A74,#5D3A1A);background-size:400% 400%}
+@keyframes g{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.c{max-width:1180px;margin:0 auto;padding:16px}
+.navbar{position:sticky;top:10px;z-index:50;background:rgba(27,58,75,.96);backdrop-filter:blur(14px);border-radius:999px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 10px 30px rgba(0,0,0,.2);border:2px solid #D1B18B;flex-wrap:wrap}
+.nav-left{display:flex;align-items:center;gap:10px;color:#fff;font-weight:900}
+.nav-left b{font-family:'Cambria',serif;font-size:18px;letter-spacing:.3px;line-height:1.2}
+.nav-links{display:flex;gap:4px;flex-wrap:wrap}
+.nav-links a{color:#F7EFE7;text-decoration:none;padding:9px 12px;border-radius:999px;font-weight:800;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{background:#D1B18B;color:#1B3A4B}
+.toggleBtn{background:#F7EFE7;color:#1B3A4B;border:2px solid #D1B18B;padding:9px 14px;border-radius:999px;font-weight:900;cursor:pointer;white-space:nowrap}
+body.dark .toggleBtn{background:#1B3A4B;color:#F7EFE7}
+#cover{position:fixed;inset:0;z-index:100;background:#1B3A4B;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
+#coverInner{width:100%;max-width:1020px;background:#FFFDF8;border-radius:28px;overflow:hidden;text-align:center;border:6px solid var(--coklat-muda);color:#1B3A4B}
+/* COVER MENU = FOTO PERTAMA - PRESISI 16:9 */
+#coverImg{width:100%;aspect-ratio:16/9;height:420px;max-height:420px;object-fit:cover;object-position:center 30%;display:block;background:#729BA3}
+.coverTop{background:var(--navy);color:#fff;padding:12px 10px;font-weight:800;letter-spacing:1px;font-size:18px;line-height:1.4;white-space:normal;word-break:break-word}.coverTop span{color:#D1B18B}
+.coverTitle{padding:16px 18px 4px;color:#1B3A4B;font-size:32px;line-height:1.3;text-transform:uppercase;font-family:'Cambria','Times New Roman',serif;font-weight:900;white-space:normal;word-break:break-word;overflow:visible;max-width:100%}
+.coverTitle span{display:block;color:#8B5E3C;margin-top:4px}
+.coverSub{padding:0 18px 10px;color:#475569;font-weight:700;font-size:20px!important}
+.coverMenu{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px 16px;background:#F7EFE7;border-top:2px solid #D1B18B;border-bottom:2px solid #D1B18B}
+.coverMenu a{background:#1B3A4B;color:#fff;text-decoration:none;padding:10px 14px;border-radius:999px;font-weight:800}
+.coverMenu a:nth-child(2){background:#2E5A74}.coverMenu a:nth-child(3){background:#729BA3}.coverMenu a:nth-child(4){background:#8B5E3C}.coverMenu a:nth-child(5){background:#B45309}
+.coverBtn{background:var(--navy);color:#fff;border:none;padding:15px 30px;border-radius:999px;font-weight:900;cursor:pointer;margin:6px}
+.uploadLabel{display:inline-block;background:#EAF6FF;color:#1B3A4B;padding:10px 16px;border-radius:999px;font-weight:800;cursor:pointer;margin:6px;border:1.5px dashed var(--denim)}
+.k7-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:16px}
+.k7-box{background:var(--box);border-radius:18px;padding:16px 10px;text-align:center;border-top:6px solid var(--denim);box-shadow:0 6px 16px rgba(0,0,0,.06)}
+.k7-box:nth-child(1){border-top-color:#F59E0B}.k7-box:nth-child(2){border-top-color:#22C55E}.k7-box:nth-child(3){border-top-color:#00BCD4}.k7-box:nth-child(4){border-top-color:#EF4444}.k7-box:nth-child(5){border-top-color:#8B5CF6}.k7-box:nth-child(6){border-top-color:#2E5A74}.k7-box:nth-child(7){border-top-color:#1B3A4B}
+.k7-box b{display:block;font-family:'Cambria',serif;font-size:18px;line-height:1.3;margin-top:6px}
+.k7-box span{font-size:14px!important;color:#64748B}
+/* SLIDER 4 FOTO SISANYA - PRESISI 16:9 */
+.slider{overflow:hidden;border-radius:22px;margin-top:16px;position:relative;width:100%;aspect-ratio:16/9;height:360px;max-height:360px;background:var(--navy);border:4px solid var(--coklat-muda)}
+.slides{display:flex;width:400%;height:100%;animation:slide4 20s infinite}
+.slides img{width:25%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+@keyframes slide4{0%,20%{transform:translateX(0)}25%,45%{transform:translateX(-25%)}50%,70%{transform:translateX(-50%)}75%,95%{transform:translateX(-75%)}100%{transform:translateX(0)}}
+.sliderTag{position:absolute;bottom:12px;left:12px;background:rgba(27,58,75,.9);color:#fff;padding:8px 14px;border-radius:999px;font-weight:800}
+.sliderTag2{position:absolute;top:12px;right:12px;background:var(--coklat-muda);color:#1B3A4B;padding:6px 12px;border-radius:999px;font-weight:800}
+header{background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.1);border-left:8px solid var(--coklat-muda);margin-top:16px}
+.header-left{display:flex;gap:14px;align-items:center}
+.badge{background:var(--navy);color:#fff;padding:8px 14px;border-radius:999px;font-weight:800}.badge2{background:var(--coklat-muda);color:#1B3A4B;padding:8px 14px;border-radius:999px;font-weight:800}
+.card{background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.07);border-top:6px solid var(--denim)}
+.sec{margin-top:16px;background:var(--card);backdrop-filter:blur(14px);border-radius:24px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.08);scroll-margin-top:90px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.box{background:var(--box);border-radius:18px;padding:16px;border:1px solid var(--border)}
+.search{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.search input,.search select,.search textarea{padding:14px;border-radius:14px;border:1.5px solid #729BA3;width:100%;background:#FFFDF8}
+.search input,.search select{flex:1;min-width:170px}
+button{background:var(--navy);color:#fff;border:none;padding:14px 20px;border-radius:14px;font-weight:800;cursor:pointer}
+button.sec2{background:var(--denim)} button.warn{background:#B45309} button.coklat{background:#8B5E3C}
+table{width:100%;border-collapse:collapse;margin-top:14px} th{background:var(--navy);color:#fff;padding:12px;text-align:left} th:nth-child(3),th:nth-child(4){background:var(--coklat-muda);color:#1B3A4B} td{padding:12px;border-bottom:1px solid var(--border);vertical-align:top}
+.pill{padding:5px 10px;border-radius:999px;font-weight:800;white-space:nowrap}.good{background:#DCFCE7;color:#166534}.mid{background:#FEF9C3;color:#854D0E}.low{background:#FEE2E2;color:#991B1B}
+.det{background:#F0F9FF;border:2px solid #729BA3;border-radius:18px;padding:16px;margin-top:14px;display:none;color:#1B3A4B}
+body.dark .det{background:#22365E;color:#fff}
+.dg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.dg div{background:var(--box);border-radius:14px;padding:12px;border:1px solid var(--border)}
+.kes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.kes-box{background:var(--box);border-radius:18px;padding:18px;border-top:7px solid var(--denim)}
+.kes-box:nth-child(1){border-top-color:#22C55E}.kes-box:nth-child(2){border-top-color:#729BA3}.kes-box:nth-child(3){border-top-color:#D1B18B}.kes-box:nth-child(4){border-top-color:#2E5A74}.kes-box:nth-child(5){border-top-color:#F59E0B}.kes-box:nth-child(6){border-top-color:#8B5CF6}
+.kes-box p,.kes-big p{text-align:justify!important;text-justify:inter-word;hyphens:auto}
+.kes-box h3{text-align:left}
+.kes-big{background:linear-gradient(135deg,#1B3A4B,#2E5A74,#8B5E3C);color:#fff;border-radius:20px;padding:22px;margin-top:16px}.kes-big h3{color:#fff}
+.feedback{border:2px dashed #8B5E3C;background:#FFF8E7;border-radius:18px;padding:16px;margin-top:14px;color:#1B3A4B}
+body.dark .feedback{background:#2E2A1A;color:#fff}
+.fb-item{background:var(--box);border-radius:14px;padding:12px;margin-top:10px;border-left:5px solid #D1B18B}
+.profil{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avatar{width:92px;height:92px;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.2);background:linear-gradient(135deg,#2E5A74,#D1B18B);color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px!important;font-weight:900;font-family:'Cambria',serif;overflow:hidden;flex-shrink:0}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.footer{background:linear-gradient(135deg,#1B3A4B,#2E5A74);color:#fff;border-radius:24px;padding:24px;margin-top:16px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;border:3px solid #D1B18B}
+.footer h3{color:#fff;font-size:24px}
+.footer p{text-align:justify!important;line-height:1.7}
+.footer a{color:#D1B18B;font-weight:800;text-decoration:none}
+@media(max-width:900px){.k7-grid{grid-template-columns:repeat(3,1fr)}.nav-links{display:none}.g4,.charts,.dg,.kes-grid{grid-template-columns:1fr 1fr}#coverImg{height:260px;max-height:260px}.slider{height:240px;max-height:240px}.coverTitle{font-size:24px}}
+@media(max-width:520px){.k7-grid,.g4,.charts,.dg,.kes-grid{grid-template-columns:1fr}h1{font-size:26px}.coverTitle{font-size:22px}#coverImg{height:200px;max-height:200px;aspect-ratio:4/3}.slider{height:190px;max-height:190px;aspect-ratio:4/3}.navbar{border-radius:20px}}
+</style></head>
+<body><div class="bg"></div>
+
+<div id="cover"><div id="coverInner">
+<div class="coverTop">VERTIKAL <span>★</span> SMA PGRI 2 BANJARMASIN</div>
+<!-- COVER MENU = FOTO PERTAMA -->
+<img id="coverImg" src="foto-cover.jpg" alt="Cover Menu Pertama - Siswa Hormat XI-2 & XI-3" width="1020" height="420">
+<img class="logo-big" src="logo-sma.png" alt="Logo SMA PGRI 2 Banjarmasin" width="110" height="110">
+<div class="coverTitle">SELAMAT DATANG DI DASHBOARD<br>7 KEBIASAAN ANAK INDONESIA HEBAT<span>SMA PGRI 2 BANJARMASIN</span></div>
+<p class="coverSub">Dashboard Survei Kebiasaan Siswa</p>
+<div class="coverMenu">
+<a href="#home" onclick="tutupCover()">🏠 Home</a>
+<a href="#survei" onclick="tutupCover()">📊 Survei</a>
+<a href="#grafik" onclick="tutupCover()">📈 Grafik</a>
+<a href="#analisis" onclick="tutupCover()">📋 Analisis</a>
+<a href="#siswa" onclick="tutupCover()">🔍 Data Siswa</a>
+<a href="#kesimpulan" onclick="tutupCover()">📌 Kesimpulan</a>
+<a href="#feedback" onclick="tutupCover()">💬 Feedback</a>
+</div>
+<div style="padding:14px"><h3 style="font-size:20px">7 KEBIASAAN ANAK INDONESIA HEBAT</h3>
+<div class="k7-grid" style="margin-top:10px">
+<div class="k7-box"><div class="icon">🌅</div><b>Bangun Pagi</b><span>Kebiasaan 1</span></div>
+<div class="k7-box"><div class="icon">🕌</div><b>Beribadah</b><span>Kebiasaan 2</span></div>
+<div class="k7-box"><div class="icon">🏃</div><b>Berolahraga</b><span>Kebiasaan 3</span></div>
+<div class="k7-box"><div class="icon">🍽️</div><b>Makan Sehat dan Bergizi</b><span>Kebiasaan 4</span></div>
+<div class="k7-box"><div class="icon">📚</div><b>Gemar Belajar</b><span>Kebiasaan 5</span></div>
+<div class="k7-box"><div class="icon">🤝</div><b>Bermasyarakat</b><span>Kebiasaan 6</span></div>
+<div class="k7-box"><div class="icon">😴</div><b>Tidur Cepat</b><span>Kebiasaan 7</span></div>
+</div></div>
+<div style="padding:0 18px 18px">
+<button class="coverBtn" onclick="tutupCover()">▶ MASUK DASHBOARD</button><br>
+<label class="uploadLabel">📸 Ganti Foto Cover <input type="file" accept="image/*" hidden onchange="gantiCover(this)"></label>
+</div></div></div>
+
+<div class="c">
+<nav class="navbar">
+<div class="nav-left"><img class="logo" src="logo-sma.png" alt="Logo SMA PGRI 2 Banjarmasin" width="60" height="60"><b>VERTIKAL<br>SMA PGRI 2 BANJARMASIN</b></div>
+<div class="nav-links">
+<a href="#home" class="active">🏠 Home</a><a href="#survei">📊 Survei</a><a href="#grafik">📈 Grafik</a><a href="#analisis">📋 Analisis</a><a href="#siswa">🔍 Data Siswa</a><a href="#kesimpulan">📌 Kesimpulan</a><a href="#feedback">💬 Feedback</a>
+</div>
+<button class="toggleBtn" id="toggleBtn" onclick="toggleMode()">🌙 Gelap</button>
+</nav>
+
+<header id="home"><div class="header-left"><img class="logo" src="logo-sma.png" alt="Logo SMA PGRI 2 Banjarmasin" width="60" height="60"><div><h1>VERTIKAL SMA PGRI 2 BANJARMASIN</h1><p>SMA PGRI 2 BANJARMASIN • 7 Kebiasaan Anak Indonesia Hebat</p></div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><div class="badge">765 Pengisian</div><div class="badge2">308 Responden</div></div></header>
+
+<!-- YANG DIGESER = 4 FOTO SISANYA -->
+<div class="slider"><div class="slides" id="slidesSekolah">
+<img src="foto-1.jpg" alt="Foto Geser 1 - Siswa Bersih-Bersih Depan Kelas XII IPS 2" width="1180" height="360">
+<img src="foto-2.jpg" alt="Foto Geser 2 - Siswa Mengaji Beribadah" width="1180" height="360">
+<img src="foto-3.jpg" alt="Foto Geser 3 - Senam Pagi Berolahraga" width="1180" height="360">
+<img src="foto-4.jpg" alt="Foto Geser 4 - Drumband Bermasyarakat" width="1180" height="360">
+</div><div class="sliderTag">🏫 SMA PGRI 2 BANJARMASIN • Galeri Kegiatan</div><div class="sliderTag2">GESER OTOMATIS • 4 FOTO • 16:9</div></div>
+
+<div class="sec"><h2>🌟 7 KEBIASAAN ANAK INDONESIA HEBAT - LENGKAP</h2><p>Tidak dipotong. Sesuai susunan resmi:</p>
+<div class="k7-grid">
+<div class="k7-box"><div class="icon">🌅</div><b>1. Bangun Pagi</b><span>Bangun sebelum pukul 06.00, rapikan tempat tidur</span></div>
+<div class="k7-box"><div class="icon">🕌</div><b>2. Beribadah</b><span>Berdoa, tidak menunda ibadah karena HP</span></div>
+<div class="k7-box"><div class="icon">🏃</div><b>3. Berolahraga</b><span>Olahraga rutin, jalan kaki, pemanasan</span></div>
+<div class="k7-box"><div class="icon">🍽️</div><b>4. Makan Sehat dan Bergizi</b><span>Air putih, MBG habis, kurangi makanan kurang sehat</span></div>
+<div class="k7-box"><div class="icon">📚</div><b>5. Gemar Belajar</b><span>Penasaran, pertanyaan berbobot, cari jawaban sendiri</span></div>
+<div class="k7-box"><div class="icon">🤝</div><b>6. Bermasyarakat</b><span>Menyapa, ramah, aktif organisasi, hargai perbedaan</span></div>
+<div class="k7-box"><div class="icon">😴</div><b>7. Tidur Cepat</b><span>Tidur 7-8 jam, HP disimpan, tidak begadang</span></div>
+</div></div>
+
+<div class="sec" id="survei"><h2><span class="icon">📊</span> SURVEI - STATISTIK SURVEI SISWA</h2><div class="g4">
+<div class="card"><div class="icon">📝</div><small>Total Pengisian Survei</small><h3>765</h3><p>4 hari survei • 21 pernyataan</p></div>
+<div class="card"><div class="icon">⭐</div><small>Skor Rata-rata Survei</small><h3>2.98 / 4.00</h3><p>Kategori: BAIK</p></div>
+<div class="card"><div class="icon">🤝</div><small>Dimensi Tertinggi</small><h3>Sosial 3.25</h3><p>Menghargai perbedaan 3.44</p></div>
+<div class="card"><div class="icon">⚠️</div><small>Perlu Dibina</small><h3>Diskusi 2.75</h3><p>Pertanyaan berbobot 2.45</p></div>
+</div></div>
+
+<div class="sec" id="grafik"><h2><span class="icon">📈</span> GRAFIK BATANG HASIL SURVEI</h2><p>Semua grafik batang.</p>
+<div class="charts"><div class="box"><h3>📊 Per Dimensi (Batang)</h3><canvas id="c1"></canvas></div><div class="box"><h3>📊 Per Kelas (Batang)</h3><canvas id="c2"></canvas></div></div>
+<div class="box" style="margin-top:16px"><h3>📊 Per Item (Batang)</h3><canvas id="c3" height="120"></canvas></div></div>
+
+<div class="sec" id="analisis"><h2><span class="icon">📋</span> ANALISIS KEBIASAAN SISWA - RATA-RATA, SERING DILAKUKAN, JARANG DILAKUKAN</h2>
+<p style="margin-top:8px;color:#475569">Cara baca: <b>Rata-rata</b> = skor rata-rata 1-4 &nbsp;|&nbsp; <b>Sering Dilakukan</b> = jawaban yang paling banyak dipilih siswa &nbsp;|&nbsp; <b>Jarang Dilakukan</b> = jawaban yang paling sedikit dipilih siswa</p>
+<div style="overflow:auto"><table><thead><tr><th>Pernyataan</th><th>Dimensi</th><th>Rata-rata Mentah</th><th>Rata-rata Dibalik</th><th>Sering Dilakukan</th><th>Jarang Dilakukan</th><th>Status</th></tr></thead><tbody id="tabelItem"></tbody></table></div></div>
+
+<div class="sec" id="siswa"><h2><span class="icon">🔍</span> DATA SISWA - KLIK NAMA UNTUK LIHAT PROFIL</h2>
+<div class="search"><input id="q" placeholder="Ketik kode / kelas... S-001, X-1..." oninput="cari()"><select id="fk" onchange="cari()"><option value="">Semua Kelas</option></select><button onclick="cari()">🔍 Cari</button></div>
+<p id="hasil"></p>
+<div class="det" id="det"><div class="profil"><div class="avatar" id="avatarBox">S</div><div><h3 id="dn"></h3><p id="di"></p><label class="uploadLabel">📸 Ganti Foto Profil <input type="file" accept="image/*" hidden onchange="gantiAvatar(this)"></label><br><button onclick="hapusAvatar()" style="padding:8px 12px;margin-top:6px;background:#EF4444">Hapus Foto (Balik ke Inisial)</button></div></div><div class="dg" id="dg"></div><p id="ds" style="margin-top:10px;font-weight:700"></p>
+<div class="feedback"><h4>💬 FORM FEEDBACK / SARAN - UNTUK SISWA YANG NILAINYA KURANG BAIK</h4><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px"><select id="fbKategori"><option>📚 Bangun Pagi</option><option>🕌 Beribadah</option><option>🏃 Berolahraga</option><option>🍽️ Makan Sehat dan Bergizi</option><option>📚 Gemar Belajar</option><option>🤝 Bermasyarakat</option><option>😴 Tidur Cepat</option></select><select id="fbOleh"><option>Guru BK</option><option>Wali Kelas</option><option>Guru Piket</option><option>Teman / OSIS</option></select></div><textarea id="fbIsi" rows="3" placeholder="Tulis saran..."></textarea><div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="sec2" onclick="simpanFeedback()">💾 Simpan Saran</button><button class="coklat" onclick="isiSaranOtomatis()">✨ Isi Saran Otomatis</button></div></div><div id="listFeedback"></div></div>
+<div style="overflow:auto"><table><thead><tr><th>Foto</th><th>Kode</th><th>Kelas</th><th>Isi</th><th>Skor</th><th>Kategori</th><th>Aksi</th></tr></thead><tbody id="tb"></tbody></table></div></div>
+
+<div class="sec" id="kesimpulan"><h2><span class="icon">📌</span> KESIMPULAN - HASIL DATA 765 PENGISIAN</h2>
+<div class="kes-big"><h3>Skor Rata-rata: 2.98 / 4.00 - BAIK</h3><p>Hasil survei menunjukkan bahwa kebiasaan siswa SMA PGRI 2 Banjarmasin secara umum sudah berada pada kategori baik. Kekuatan utama terletak pada dimensi Bermasyarakat dan Beribadah, sedangkan dimensi yang masih perlu dibina adalah Gemar Belajar, Berolahraga, serta Makan Sehat dan Bergizi.</p></div>
+<div class="kes-grid">
+<div class="kes-box"><div class="icon">✅</div><h3>1. SUDAH BAGUS</h3><p>Siswa sudah menunjukkan sikap yang sangat baik dalam menghargai perbedaan pendapat dengan skor 3,44, menyapa dan bersikap ramah dengan skor 3,38, menyempatkan diri berdoa dengan skor 3,29, serta datang tepat waktu ke sekolah dengan skor 3,21. Hal ini membuktikan bahwa nilai sosial menjadi kekuatan utama di sekolah ini.</p></div>
+<div class="kes-box"><div class="icon">⭐</div><h3>2. NEGATIF RENDAH = BAGUS</h3><p>Pernyataan negatif justru menunjukkan hasil yang baik karena skor mentahnya rendah. Siswa jarang mengalami mimpi buruk setelah bermain HP larut malam, jarang menunda ibadah karena scrolling HP, dan jarang tertidur dengan HP di tangan. Artinya, sebagian besar siswa sudah mampu mengontrol penggunaan HP.</p></div>
+<div class="kes-box"><div class="icon">💬</div><h3>3. PRIORITAS: GEMAR BELAJAR</h3><p>Dimensi Gemar Belajar masih perlu dibina karena skornya hanya 2,75. Indikator yang paling rendah adalah mengajukan pertanyaan berbobot dengan skor 2,45. Banyak siswa yang masih merasa takut atau malu untuk bertanya di kelas, sehingga budaya diskusi perlu terus didorong.</p></div>
+<div class="kes-box"><div class="icon">🏃</div><h3>4. PRIORITAS: BEROLAHRAGA</h3><p>Dimensi Berolahraga memperoleh skor 2,79 dengan indikator terendah pada olahraga rutin di luar jam olahraga sebesar 2,47. Hal ini menunjukkan bahwa aktivitas gerak siswa di luar jam pelajaran olahraga masih kurang, sehingga perlu adanya program gerak aktif yang terjadwal.</p></div>
+<div class="kes-box"><div class="icon">🍽️</div><h3>5. PRIORITAS: MAKAN SEHAT DAN BERGIZI</h3><p>Dimensi Makan Sehat dan Bergizi memperoleh skor 2,83. Masih banyak siswa yang jajannya didominasi makanan kurang sehat dan belum menghabiskan MBG tanpa sisa dengan skor 2,88. Oleh karena itu, edukasi kantin sehat dan pembiasaan menghabiskan MBG perlu ditingkatkan.</p></div>
+<div class="kes-box"><div class="icon">😴</div><h3>6. PRIORITAS: TIDUR CEPAT</h3><p>Dimensi Tidur Cepat memperoleh skor 2,84 pada indikator tidur cukup 7 sampai 8 jam. Masih ada siswa yang tidur larut karena bermain HP. Oleh sebab itu, perlu adanya kampanye HP tidur duluan pada pukul 21.00 yang melibatkan orang tua di rumah.</p></div>
+</div>
+<div class="kes-big" style="margin-top:16px"><h3>✅ INSIGHT & REKOMENDASI TINDAKAN</h3><p style="margin-top:8px;line-height:1.8">1) Gemar Belajar: Wajibkan satu pertanyaan berbobot per kelas per hari dan berikan apresiasi kepada siswa yang berani bertanya.<br>2) Berolahraga: Adakan senam atau jalan kaki selama 15 menit sebelum jam pertama, sebanyak tiga kali dalam seminggu.<br>3) Makan Sehat dan Bergizi: Edukasi air putih, kurangi minuman manis di kantin, dan biasakan menghabiskan MBG.<br>4) Tidur Cepat: Orang tua ikut mengontrol HP pada pukul 21.00 agar siswa dapat tidur lebih cepat dan cukup.</p></div>
+</div>
+
+<div class="sec" id="feedback"><h2><span class="icon">💬</span> SEMUA FEEDBACK TERSIMPAN</h2><div id="allFeedback"></div><button class="warn" onclick="hapusSemuaFb()" style="margin-top:12px">🗑️ Hapus Semua Feedback</button></div>
+
+<footer class="footer">
+<div class="icon">📍</div>
+<div style="flex:1;min-width:280px">
+<h3>📍 ALAMAT SMA PGRI 2 BANJARMASIN</h3>
+<p style="margin-top:8px"><b>VERTIKAL SMA PGRI 2 BANJARMASIN</b><br>
+Jl. Cempaka Sari 3 No. 115, Kelurahan Basirih, Kecamatan Banjarmasin Barat, Kota Banjarmasin, Kalimantan Selatan 70114.</p>
+<p style="margin-top:10px"><a href="https://maps.google.com/?q=Jl.+Cempaka+Sari+3+No.+115+Basirih+Banjarmasin+Barat+Banjarmasin+Kalimantan+Selatan+70114" target="_blank">🗺️ Buka di Google Maps →</a> &nbsp; | &nbsp; © 2026 VERTIKAL SMA PGRI 2 BANJARMASIN • 7 Kebiasaan Anak Indonesia Hebat</p>
+</div>
+<div style="text-align:right"><img class="logo-footer" src="logo-sma.png" alt="Logo SMA PGRI 2 Banjarmasin" width="80" height="80"><p style="text-align:right;margin-top:8px">SMA PGRI 2<br>Banjarmasin</p></div>
+</footer>
+
+</div>
+
+<script>
+function tutupCover(){document.getElementById('cover').style.display='none';}
+function toggleMode(){const b=document.body; b.classList.toggle('dark'); const dark=b.classList.contains('dark'); document.getElementById('toggleBtn').textContent=dark?'☀️ Terang':'🌙 Gelap'; localStorage.setItem('vertikal_mode',dark?'dark':'light');}
+if(localStorage.getItem('vertikal_mode')==='dark'){document.body.classList.add('dark'); document.getElementById('toggleBtn').textContent='☀️ Terang';}
+document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',()=>{document.querySelectorAll('.nav-links a').forEach(x=>x.classList.remove('active')); a.classList.add('active');});});
+const itemStats=[
+{col:"Aku bangun pagi sebelum pukul 06.00",dim:"Bangun Pagi",raw:2.92,rev:2.92,sering:3,jarang:1,neg:false},
+{col:"Aku selalu datang tepat waktu ke sekolah.",dim:"Bangun Pagi",raw:3.21,rev:3.21,sering:4,jarang:1,neg:false},
+{col:"Aku merapikan tempat tidurku sendiri",dim:"Bangun Pagi",raw:2.98,rev:2.98,sering:3,jarang:1,neg:false},
+{col:"Aku menunda waktu ibadah karena scrolling HP",dim:"Beribadah",raw:1.91,rev:3.09,sering:2,jarang:4,neg:true},
+{col:"Aku menyempatkan diri berdoa",dim:"Beribadah",raw:3.29,rev:3.29,sering:3,jarang:1,neg:false},
+{col:"Aku mengajak teman ingatkan ibadah",dim:"Beribadah",raw:3.10,rev:3.10,sering:3,jarang:1,neg:false},
+{col:"Di luar jam olahraga, aku olahraga rutin.",dim:"Berolahraga",raw:2.47,rev:2.47,sering:2,jarang:1,neg:false},
+{col:"Aku jalan kaki untuk jarak dekat",dim:"Berolahraga",raw:2.67,rev:2.67,sering:2,jarang:1,neg:false},
+{col:"Aku pemanasan sebelum olahraga",dim:"Berolahraga",raw:3.22,rev:3.22,sering:4,jarang:1,neg:false},
+{col:"Aku memilih air putih dibanding minuman manis",dim:"Makan Sehat dan Bergizi",raw:3.09,rev:3.09,sering:3,jarang:1,neg:false},
+{col:"Menu jajananku didominasi makanan kurang sehat",dim:"Makan Sehat dan Bergizi",raw:2.49,rev:2.51,sering:3,jarang:4,neg:true},
+{col:"Aku menghabiskan MBG tanpa sisa",dim:"Makan Sehat dan Bergizi",raw:2.88,rev:2.88,sering:3,jarang:1,neg:false},
+{col:"Rasa penasaranku memaksaku cari tahu di internet/AI",dim:"Gemar Belajar",raw:2.81,rev:2.81,sering:3,jarang:1,neg:false},
+{col:"Aku mengajukan pertanyaan berbobot",dim:"Gemar Belajar",raw:2.45,rev:2.45,sering:2,jarang:1,neg:false},
+{col:"Aku mencari jawaban sendiri sebelum bertanya",dim:"Gemar Belajar",raw:3.00,rev:3.00,sering:3,jarang:1,neg:false},
+{col:"Aku menyapa dan ramah",dim:"Bermasyarakat",raw:3.38,rev:3.38,sering:4,jarang:1,neg:false},
+{col:"Aku berpartisipasi aktif organisasi/ekskul",dim:"Bermasyarakat",raw:2.93,rev:2.93,sering:3,jarang:1,neg:false},
+{col:"Aku menghargai perbedaan pendapat",dim:"Bermasyarakat",raw:3.44,rev:3.44,sering:4,jarang:1,neg:false},
+{col:"Aku tidur cukup 7-8 jam",dim:"Tidur Cepat",raw:2.84,rev:2.84,sering:3,jarang:1,neg:false},
+{col:"Aku tertidur dengan HP di tangan",dim:"Tidur Cepat",raw:2.05,rev:2.95,sering:2,jarang:4,neg:true},
+{col:"Aku mimpi buruk setelah main HP larut",dim:"Tidur Cepat",raw:1.84,rev:3.16,sering:2,jarang:4,neg:true}
+];
+const RAW=[["S-001","X-1",4,3.55,[3.58,3.75,3.92,3.33,4,4,2.25]],["S-002","X-1",4,2.54,[2.22,3.11,2.56,2.33,2.22,2.78,2.56]],["S-003","X-2",4,3.31,[3.33,3.25,2.42,3.42,3.58,4,3.17]],["S-004","X-3",4,2.83,[2.92,2.92,2.67,3,2.67,2.67,3]],["S-005","XI-1",4,3.42,[3.92,3.08,3,3.33,3.58,3.92,3.08]],["S-006","XI-2",4,2.31,[1.67,2.58,2.33,2.42,2,2.33,2.83]],["S-007","XI-3",4,3.62,[3.75,3.42,3.25,3.75,3.83,4,3.33]],["S-008","XII-1",4,3.88,[4,4,3.75,4,3.42,4,4]],["S-009","XII-2",4,2.33,[2.08,2.58,2.08,2.17,2.17,2.75,2.5]],["S-010","XII-3",4,2.71,[2.67,3.11,1.78,2.67,2.78,3,3]],["S-011","X-2",2,1.55,[1,1,1.83,1.5,2.33,1.33,1.83]],["S-012","XII-1",3,3.97,[4,4,3.78,4,4,4,4]]];
+const DIM=["Bangun Pagi","Beribadah","Berolahraga","Makan Sehat dan Bergizi","Gemar Belajar","Bermasyarakat","Tidur Cepat"];
+const siswaData=RAW.map(r=>{let d={};DIM.forEach((k,i)=>d[k]=r[4][i]);return{kode:r[0],kelas:r[1],jumlah:r[2],skor:r[3],dimensi:d}});
+function kat(s){return s>=3.3?'Sangat Baik':s>=2.7?'Baik':s>=2.3?'Cukup':'Perlu Dibina'}
+function wk(s){return s>=3.3?'good':s>=2.7?'mid':'low'}
+function fmt(v){return v==null?'-':v.toFixed(2)}
+document.getElementById('tabelItem').innerHTML=itemStats.map(r=>`<tr><td>${r.col}</td><td>${r.dim}</td><td><b>${r.raw.toFixed(2)}</b></td><td><b>${r.rev.toFixed(2)}</b></td><td><b>${r.sering}</b></td><td><b>${r.jarang}</b></td><td><span class="pill ${wk(r.rev)}">${r.neg?'Negatif *':r.rev>=3?'Baik':r.rev>=2.7?'Cukup':'Perlu Perhatian'}</span></td></tr>`).join('');
+const kelasList=[...new Set(siswaData.map(s=>s.kelas))].sort();
+document.getElementById('fk').innerHTML='<option value="">Semua Kelas</option>'+kelasList.map(k=>`<option>${k}</option>`).join('');
+const dimG={}; itemStats.forEach(it=>{if(!dimG[it.dim])dimG[it.dim]=[];dimG[it.dim].push(it.rev)}); const dimM=Object.entries(dimG).map(([k,v])=>[k,v.reduce((a,b)=>a+b,0)/v.length]);
+Chart.defaults.font.size=18; Chart.defaults.color='#1B3A4B';
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:dimM.map(x=>x[0]),[STRIPPED]
+new Chart(document.getElementById('c2'),{type:'bar',data:{labels:['X-1',[STRIPPED] Per Kelas',data:[3.05,[STRIPPED]
+new Chart(document.getElementById('c3'),{type:'bar',data:{labels:itemStats.map(r=>r.col.substring(0,[STRIPPED] Dibalik',data:itemStats.map(r=>r.rev),[STRIPPED]
+function gantiCover(inp){if(!inp.files[0])return; const url=URL.createObjectURL(inp.files[0]); document.getElementById('coverImg').src=url;}
+let currentKode=''; let avatarData={}; try{avatarData=JSON.parse(localStorage.getItem('avatar_data')||'{}')}catch(e){avatarData={}}
+function getAvatarHTML(kode){if(avatarData[kode]) return `<img src="${avatarData[kode]}">`; return kode.replace('S-','');}
+function setAvatarBox(kode){document.getElementById('avatarBox').innerHTML=getAvatarHTML(kode);}
+function gantiAvatar(inp){if(!inp.files[0]||!currentKode)return; const r=new FileReader(); r.onload=e=>{avatarData[currentKode]=e.target.result; localStorage.setItem('avatar_data',JSON.stringify(avatarData)); setAvatarBox(currentKode); cari();}; r.readAsDataURL(inp.files[0]);}
+function hapusAvatar(){if(!currentKode)return; delete avatarData[currentKode]; localStorage.setItem('avatar_data',JSON.stringify(avatarData)); setAvatarBox(currentKode); cari();}
+function cari(){const q=document.getElementById('q').value.toLowerCase().trim(); const k=document.getElementById('fk').value; const f=siswaData.filter(s=>(s.kode.toLowerCase().includes(q)||s.kelas.toLowerCase().includes(q))&&(k===''||s.kelas===k));
+document.getElementById('tb').innerHTML=f.map(s=>`<tr><td><div class="avatar" style="width:60px;height:60px;font-size:20px!important">${getAvatarHTML(s.kode)}</div></td><td><b>${s.kode}</b></td><td>${s.kelas}</td><td>${s.jumlah}x</td><td><b>${fmt(s.skor)}</b></td><td><span class="pill ${wk(s.skor)}">${kat(s.skor)}</span></td><td><button onclick="lihat('${s.kode}')">Lihat</button></td></tr>`).join('')||'<tr><td colspan=7>Tidak ditemukan</td></tr>';
+document.getElementById('hasil').textContent='Menampilkan '+f.length+' dari '+siswaData.length+' contoh anonim.';}
+function lihat(kode){const s=siswaData.find(x=>x.kode===kode); if(!s) return; currentKode=kode;
+document.getElementById('det').style.display='block'; setAvatarBox(kode);
+document.getElementById('dn').textContent=kode+' • '+kat(s.skor);
+document.getElementById('di').textContent=s.kelas+' • '+s.jumlah+'x isi • Skor '+fmt(s.skor)+' • '+kat(s.skor);
+document.getElementById('dg').innerHTML=Object.entries(s.dimensi).map(([kk,v])=>`<div><small>${kk}</small><br><b>${fmt(v)}</b> <span class="pill ${wk(v)}">${kat(v)}</span></div>`).join('');
+const arr=Object.entries(s.dimensi).sort((a,b)=>a[1]-b[1]); const t=arr[0];
+document.getElementById('ds').innerHTML='Fokus perbaiki: '+t[0]+' ('+t[1].toFixed(2)+') — '+(s.skor<2.7?'⚠️ Nilai masih kurang, isi form feedback di bawah.':'✅ Sudah baik, pertahankan.');
+tampilFeedbackKode(); document.getElementById('det').scrollIntoView({behavior:'smooth'});}
+function getFb(){try{return JSON.parse(localStorage.getItem('vertikal_fb')||'[]')}catch(e){return[]}}
+function setFb(a){localStorage.setItem('vertikal_fb',JSON.stringify(a))}
+function simpanFeedback(){const isi=document.getElementById('fbIsi').value.trim(); if(!isi){alert('Isi dulu sarannya!');return} const fb={kode:currentKode,kategori:document.getElementById('fbKategori').value,oleh:document.getElementById('fbOleh').value,isi,tgl:new Date().toLocaleString('id-ID')}; const all=getFb(); all.unshift(fb); setFb(all); document.getElementById('fbIsi').value=''; alert('Saran tersimpan untuk '+currentKode); tampilFeedbackKode(); tampilSemuaFb();}
+function isiSaranOtomatis(){const s=siswaData.find(x=>x.kode===currentKode); if(!s) return; const arr=Object.entries(s.dimensi).sort((a,b)=>a[1]-b[1]); const t=arr[0]; const katMap={'Bangun Pagi':'Coba bangun 15 menit lebih awal & rapikan tempat tidur sebelum HP.','Beribadah':'Ingatkan teman untuk ibadah bareng, kurangi scroll HP pas waktu ibadah.','Berolahraga':'Jalan kaki / senam 15 menit, 3x seminggu. Mulai dari yang ringan.','Makan Sehat dan Bergizi':'Bawa air putih, kurangi minuman manis, habiskan MBG.','Gemar Belajar':'Coba ajukan 1 pertanyaan berbobot tiap pelajaran, jangan takut salah.','Bermasyarakat':'Sapa 3 teman baru tiap hari & ikut 1 ekskul.','Tidur Cepat':'HP tidur duluan jam 21.00, tidur 7-8 jam.'}; document.getElementById('fbIsi').value='Fokus: '+t[0]+' ('+t[1].toFixed(2)+'). Saran: '+(katMap[t[0]]||'Tetap semangat!');}
+function tampilFeedbackKode(){const all=getFb().filter(x=>x.kode===currentKode); document.getElementById('listFeedback').innerHTML=all.length?'<h4 style="margin-top:14px">📝 Saran untuk '+currentKode+' ('+all.length+')</h4>'+all.map(f=>`<div class="fb-item"><b>${f.kategori}</b> • ${f.oleh} • <small>${f.tgl}</small><p>${f.isi}</p></div>`).join(''):'<p style="margin-top:10px;color:#64748B">Belum ada saran.</p>';}
+function tampilSemuaFb(){const all=getFb(); document.getElementById('allFeedback').innerHTML=all.length?all.map((f,i)=>`<div class="fb-item"><b>${f.kode}</b> • ${f.kategori} • ${f.oleh} • <small>${f.tgl}</small><p>${f.isi}</p><button onclick="hapusFb(${i})" style="padding:6px 10px;background:#EF4444">Hapus</button></div>`).join(''):'<p>Belum ada feedback.</p>';}
+function hapusFb(i){const all=getFb(); all.splice(i,1); setFb(all); tampilSemuaFb(); tampilFeedbackKode();}
+function hapusSemuaFb(){if(confirm('Hapus semua feedback?')){localStorage.removeItem('vertikal_fb'); tampilSemuaFb(); tampilFeedbackKode();}}
+cari(); tampilSemuaFb();
+</script></body></html>
